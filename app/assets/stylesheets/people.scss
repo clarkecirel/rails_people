@@ -1,3 +1,147 @@
 // Place all the styles related to the people controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.nav {
+  display: block;
+  border-radius: 4px;
+  background-color: #1ef4df;
+  border: thick;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  font-family: courier;
+  padding: 5px 0px 5px 0px;
+  width: 175px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 20px 0px 0px 0px;
+}
+
+.nav span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.nav span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.nav:hover span {
+  padding-right: 25px;
+}
+
+.nav:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1ef4df;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-family: courier;
+  padding: 10px;
+  width: 200px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.show_button {
+  border-radius: 4px;
+  background-color: #1ef4df;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  font-family: courier;
+  padding: 3px;
+  width: 100px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+
+.start_button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1ef4df;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  font-family: courier;
+  padding: 10px;
+  width: 325px;
+  transition: all 1s;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.start_button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.start_button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.start_button:hover span {
+  padding-right: 25px;
+}
+
+.start_button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.e_button {
+  border-radius: 4px;
+  background-color: #1ef4df;
+  text-align: center;
+  font-size: 16px;
+  font-family: courier;
+  padding: 3px;
+  width: 150px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+.c_button {
+  border-radius: 4px;
+  background-color: #1ef4df;
+  text-align: center;
+  padding: 5px;
+  width: 150px;
+  cursor: pointer;
+}
+
+.gender {
+  font-size: 40px;  
+}
+
+.name {
+  font-family: courier;
+}
