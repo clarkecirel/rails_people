@@ -1,10 +1,13 @@
-<h1>People</h1>
+<h2><button><%= link_to 'Add A New Person', new_person_path %></button></h2><br>
 
-<p><%= link_to 'New Person', new_person_path %></p>
+<h2> List of People: </h2>
 
+<ol>
 <% @people.each do |person| %>
-  <h2><%= person.first_name %></h2>
-  <%= link_to 'Show Person', person_path(person) %>
-  <%= link_to 'Edit Person', edit_person_path(person) %>
-  <%= link_to 'Delete Person', person, method: :delete %>
+<li>
+<h3><%= person.full_name %></h3>
+<h5><%= link_to 'Show Person', person_path(person)%>
+<%= link_to 'Edit Person', edit_person_path(person) %>
+<%= link_to 'Delete Person', person, method: :delete %></h5>
+
 <% end %>

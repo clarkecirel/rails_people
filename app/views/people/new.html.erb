@@ -1,28 +1,28 @@
-<h1>New People</h1>
+ <h1>New People</h1>
 
-<%= form_for @person do |f| %>
+ <%= form_for @person do |f| %>
 
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+   <h3><%= f.label :first_name %>
+   <%= f.text_field :first_name %><br>
+  
+   <%= f.label :last_name %>
+   <%= f.text_field :last_name %><br>
+  
+   <%= f.label :age %>
+   <%= f.text_field :age %><br>
+  
+   <%= f.label :hair_color %>
+   <%= f.text_field :hair_color %><br>
 
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
+   <%= f.label :eye_color %>
+   <%= f.text_field :eye_color %><br>
+  
+   <%= f.label :gender %>
+   <%= f.text_field :gender %><br>
+  
+   <%= f.label :alive %>
+   <%= f.check_box :alive %><br></h3>
 
-  <%= f.label :age %>
-  <%= f.text_field :age %>
-  
-  <%= f.label :hair_color %>
-  <%= f.text_field :hair_color %>
-  
-  <%= f.label :eye_color %>
-  <%= f.text_field :eye_color %>
-  
-  <%= f.label :gender %>
-  <%= f.text_field :gender %>
-  
-  <%= f.label :alive %>
-  <%= f.check_box :alive %>
-  
-  <%= f.submit %>
+   <%= f.submit %>
   <% end %>
   
